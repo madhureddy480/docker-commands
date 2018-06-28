@@ -36,3 +36,7 @@ step 2 -run command: docker run -d -p 32456:8000 imageName
 ###### -d is deamon -p is port
 ###### now the server is running on localhost port 32456
 ###### curl localhost:32456
+
+## Docker container ip address
+docker inspect --format '{{ .Networksettings.IPAddress }}' containerId
+
