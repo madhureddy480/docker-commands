@@ -24,8 +24,11 @@
   #### ENTRYPOINT to pass our command in interactive mode (18,19 video)
   
 ### docker run -it imageName ## Run container interactively 
-### docker hisoty imangeid ## See what commands are executed inside container.
+### docker hisoty imageid ## See what commands are executed inside container.
   
+  
+## override the entry point command
+docker run -it --entrypoint bash imagename
   
   
 
