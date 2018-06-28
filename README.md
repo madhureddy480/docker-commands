@@ -14,12 +14,15 @@
   
 ### docker tag imageId <image name> ## naming an image
   
-### docker build -t <your choice image name> Dockerfile location ## Build an image by using a file name Dockerfile (. is local directory)
+### docker build -t <your choice image name> Dockerfile folder ## Build an image by using a file name Dockerfile (. is local directory)
   
   #### FROM ubuntu
   #### RUN apt-get update
   #### RUN apt-get -y install wget
   #### RUN apt-get -y install curl
+  #### CMD (17 video)
+  #### ENTRYPOINT to pass our command in interactive mode (18,19 video)
+  
 ### docker run -it imageName ## Run container interactively 
 ### docker hisoty imangeid ## See what commands are executed inside container.
   
