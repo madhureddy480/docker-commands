@@ -41,3 +41,11 @@ step 2 -run command: docker run -d -p 32456:8000 imageName
 docker inspect --format '{{ .NetworkSettings.IPAddress }}' containerId
 ###### curl 172.0.72.2:8000
 
+## Remove all docker containers
+docker rm $(docker ps -a)
+docker rm -f $(docker ps -a)
+## Remove all docker images
+docker rmi $(docker images)
+docker rmi $(docker images -q)
+docker rmi -f $(docker images -q)
+
