@@ -30,5 +30,8 @@
 ## override the entry point command
 docker run -it --entrypoint bash imagename
   
-  
+## Running server on a port
+#### step 1: download web server image
+step 2 -run command: docker run -d -p 32456:8000 imageName  
+###### -d is deamon -p is port
 
