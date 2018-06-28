@@ -39,5 +39,5 @@ step 2 -run command: docker run -d -p 32456:8000 imageName
 
 ## Docker container ip address
 docker inspect --format '{{ .NetworkSettings.IPAddress }}' containerId
-###### curl 172.0.72.2:80000
+###### curl 172.0.72.2:8000
 
