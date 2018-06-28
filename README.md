@@ -34,4 +34,5 @@ docker run -it --entrypoint bash imagename
 #### step 1: download web server image
 step 2 -run command: docker run -d -p 32456:8000 imageName  
 ###### -d is deamon -p is port
-
+###### now the server is running on localhost port 32456
+###### curl localhost:32456
