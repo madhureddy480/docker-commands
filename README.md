@@ -34,9 +34,10 @@ docker run -it --entrypoint bash imagename
 #### step 1: download web server image
 step 2 -run command: docker run -d -p 32456:8000 imageName  
 ###### -d is deamon -p is port
-###### now the server is running on localhost port 32456
+###### now the server is running on host port 32456 and tcp/ip port 8000
 ###### curl localhost:32456
 
 ## Docker container ip address
-docker inspect --format '{{ .Networksettings.IPAddress }}' containerId
+docker inspect --format '{{ .NetworkSettings.IPAddress }}' containerId
+###### curl 172.0.72.2:80000
 
